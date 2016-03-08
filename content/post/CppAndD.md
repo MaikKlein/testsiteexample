@@ -24,7 +24,8 @@ void foo(){
 
 * D comes with a default GC while C++ is GC free. D can also be used without a GC but there are a few inconveniences. First the standard library(phobos) in D is not move aware. This means you can not have a `std::vector<std::unique_ptr>` in phobos. It is possible to write your own containers that are move aware which means it is possible to have an array or vector with unique pointers.
 
-* Moving in C++ is just an rvalue cast while in D it really moves. In C++ you would write a function `template<class T> void foo(T&& t){}`, it moves if `t` is an rvalue and takes `t` by ref if it is an lvalue. In D you would create two functions `void foo(T)(ref T t){}` which always captures lvalues by references and `void foo(T)(T t){}` which only captures rvalues. As far as I know moving in D is also not exception safe.
+* Moving in C++ is just an rvalue cast while in D it really moves. In C++ you would write a function `template<class T> void foo(T&& t){}`, it moves if `t` is an rvalue and takes `t` by ref if it is an lvalue. In D you would create two functions `void foo(T)(ref T t){}` which always captures lvalues by references and `void foo(T)(T t){}` which only captures rvalues. As far as I know moving in D is also not exception safe. D moves objects with a bitwise copy, this means you should not have
+  internal pointers.
 
 * `structs` in D don't have a default constructor because every type needs exception free default construction and this must be known at compile time. But it is possible to initalize structs with custom values.
 
@@ -49,8 +50,6 @@ struct Foo{
 * Functions and methods in D can be called without parenthesis if they have no arguments. `void foo(){}; foo;`
 
 * C++ as well as D have anonymous functions. C++: `[](auto a, auto b){ return a + b;}` , D: `(a, b) => a + b` or `(a, b){return a + b;}`. As far as I know capturing other variables requires the GC in D. In C++ you can explicitly capture variables by copy, ref or move. Lambda functions in D can not return references. C++17 will also make lambda functions available with `constexpr`. Lambda functions can also be used at compile time in D.
-
-* Copies in D are always shallow. This means that copying an `Array` only copies the state of the array not the elements itself. Deep copying needs to be implemented manually, for example with a `.dup` method. C++ copies are deep, you can avoid deep copies by passing by reference. `void foo(std::vector<Foo> const& v){}`
 
 * Unlike in C++ the order of declarations doesn't matter in D.
 
@@ -83,6 +82,7 @@ The code above forwards all methods and members from `Bar` to `Foo` and makes `F
 
 * Globals in D are only thread local by default unless they are immutable. To get thread safe global access you would mark the global variable as `shared`. To get the same global variables as in C++ you would used `__gshared`.
 
+* `const` in D is [transitive](https://dlang.org/const-faq.html#transitive-const).
 # Meta programming
 
 * It is possible to pass almost anything to a template in D. C++ is limited to integrals and chars.
