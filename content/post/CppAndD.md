@@ -75,7 +75,7 @@ The code above forwards all methods and members from `Bar` to `Foo` and makes `F
 
 * Interfaces can not be templated in C++ but they can be templated in D.
 
-* Conditonal compilation uses the pre-processor in C++ `if, #elif, #else, and #endif Directives`. In D it is `version(YourKeywork){...}`.
+* Conditonal compilation uses the pre-processor in C++ `#if, #elif, #else, and #endif Directives`. In D it is `version(YourKeywork){...}`.
 
 * Exceptions in D require the GC.
 
