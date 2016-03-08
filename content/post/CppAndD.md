@@ -109,7 +109,7 @@ The code above forwards all methods and members from `Bar` to `Foo` and makes `F
 
 * D has `static if`. It is possible to use template specialization in C++ to achieve something similar.
 
-* (Unsure, need more benchmarks) Compile times for meta programming seems to be roughly equivalent between C++ and D.
+* *Unsure, need more benchmarks* Compile times for meta programming seems to be roughly equivalent between C++ and D.
 
 * In D it is possible to iterate over variadic types with a foreach loop. In C++ this can be achieved as a library, for example with [Boost hana](https://github.com/boostorg/hana).
 ~~~d
