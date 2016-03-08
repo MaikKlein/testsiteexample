@@ -1,5 +1,5 @@
 +++
-date        = "2016-06-21T11:27:27-04:00"
+date        = "2016-03-01:27:27-04:00"
 title       = "A comparison between C++ and D"
 tags        = [ "D", "c++" ]
 +++

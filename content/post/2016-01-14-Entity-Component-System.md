@@ -1,11 +1,8 @@
----
-categories: null
-date: '2016-01-14'
-description: ''
-tags: []
-title: The general design of my flawed compile time entity component system in C++14
-url: /2016/01/14/Entity-Component-System
----
++++
+date        = "2016-01-14T11:27:27-04:00"
+title       = "The general design of my flawed compile time entity component system in C++14"
+tags        = [ "ecs", "c++" ]
++++
 
 {% highlight c++ %}
 {% endhighlight %}
