@@ -82,7 +82,7 @@ The code above forwards all methods and members from `Bar` to `Foo` and makes `F
 
 * Globals in D are only thread local by default unless they are immutable. To get thread safe global access you would mark the global variable as `shared`. To get the same global variables as in C++ you would used `__gshared`.
 
-* `const` in D is [transitive](https://dlang.org/const-faq.html#transitive-const). It is `undefined behaviour` in D to cast away the `const`.
+* `const` in D is [transitive](https://dlang.org/const-faq.html#transitive-const). It is `undefined behaviour` in D to cast away the `const` and modify the object.
 # Meta programming
 
 * It is possible to pass almost anything to a template in D. C++ is limited to integrals and chars.
