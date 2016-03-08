@@ -1,0 +1,6 @@
+baseurl = "https://maikklein.github.io/testsiteexample/"
+title = "Blog"
+author = "Maik Klein"
+pygmentsuseclasses = false
+pygmentsstyle = "paraiso-dark"
+

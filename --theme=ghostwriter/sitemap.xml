@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <lastmod>2016-03-05T15:35:12+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/about/</loc>
+    <lastmod>2016-03-05T15:35:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/03/03/cpp-and-d</loc>
+    <lastmod>2016-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/03/01/metaprogramming-typeobject</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2016/01/14/entity-component-system</loc>
+    <lastmod>2016-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2015/11/14/converting-strings-to-types</loc>
+    <lastmod>2015-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2015/08/11/metaprogramming-d</loc>
+    <lastmod>2015-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2015/07/30/unreal-math</loc>
+    <lastmod>2015-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2015/07/20/unreal-vs-unity</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2015/01/11/evaluating-d-for-games</loc>
+    <lastmod>2015-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2013/08/27/lifetimes-explained</loc>
+    <lastmod>2013-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2013/06/22/vistor-pattern-in-rust-with-dynamic-and-static-dispatch</loc>
+    <lastmod>2013-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/nitro/</loc>
+    <lastmod>2013-06-21T11:27:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2013/06/08/how-to-hack-rustc</loc>
+    <lastmod>2013-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2013/06/02/tasks-in-rust</loc>
+    <lastmod>2013-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/2013/05/29/macros-in-rust</loc>
+    <lastmod>2013-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>
